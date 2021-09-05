@@ -1,2 +1,3 @@
-# make all Targets for Build Gluon
-A script for linux to build the gluon firmware for all targets one after the other (assuming that you have already completed all the necessary preparations for building gluon)
+# Build Gluon Script
+the script carries out the workflow to build gluon with the ffc site config
+All targets with all cpu cores are used when building and broken equals 1
