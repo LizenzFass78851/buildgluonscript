@@ -7,7 +7,7 @@ BROKENS="1"
 
 git clone --branch v2021.1.1 https://github.com/freifunk-gluon/gluon.git
 cd gluon
-git clone https://gitlab.com/FreifunkChemnitz/site-ffc.git site
+git clone --branch chemnitz https://gitlab.com/FreifunkChemnitz/site-ffc.git site
 make update
 for target in $(make list-targets); do GLUON_TARGET=${target} make BROKEN=$BROKENS -j$(nproc||printf "2") download; done
 for target in $(make list-targets); do GLUON_TARGET=${target} make BROKEN=$BROKENS -j$(nproc||printf "2"); done
