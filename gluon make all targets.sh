@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# Build all targets as of v2021.1 gluon, also broken and use all cpu cores (broken and cpu cores can be set in the script)
+# Build all targets as of v2021.1 gluon, also broken and use all cpu cores (broken can be set in the script)
 # If there were changes to the targets during gluon, this can also be set in the script
 
-CPUCORES="4"
 BROKENS="1"
 
 TARGETS="ar71xx-generic
@@ -34,9 +33,9 @@ git clone https://gitlab.com/FreifunkChemnitz/site-ffc.git site
 make update
 
 for TARG in ${TARGETS}; do
-	make GLUON_TARGET=$TARG BROKEN=$BROKENS -j$CPUCORES download
+	make GLUON_TARGET=$TARG BROKEN=$BROKENS -j$(nproc||printf "2") download
 done
 
 for TARG in ${TARGETS}; do
-	make GLUON_TARGET=$TARG BROKEN=$BROKENS -j$CPUCORES
+	make GLUON_TARGET=$TARG BROKEN=$BROKENS -j$(nproc||printf "2")
 done
