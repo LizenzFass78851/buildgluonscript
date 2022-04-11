@@ -24,4 +24,4 @@ WORKDIR /gluon
 RUN git clone https://gitlab.com/FreifunkChemnitz/site-ffc.git site && \
     make update && \
     for target in $(make list-targets); do echo downloading ${target} && make GLUON_TARGET=${target} -j$(nproc||printf "2") download; done && \
-    for target in $(make list-targets); do echo building$ {target} && make GLUON_TARGET=${target} -j$(nproc||printf "2"); done
+    for target in $(make list-targets); do echo building ${target} && make GLUON_TARGET=${target} -j$(nproc||printf "2"); done
