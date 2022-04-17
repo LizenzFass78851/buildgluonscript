@@ -6,7 +6,7 @@
 
 BROKENS="1"
 
-
+# for gluon v2021.1.1
 TARGETS="ar71xx-generic
 ar71xx-tiny
 ar71xx-nand
@@ -28,6 +28,30 @@ x86-generic
 x86-geode
 x86-legacy
 x86-64"
+
+# for gluon current master from 17.04.2022
+#-TARGETS="ath79-generic
+#-ath79-nand
+#-bcm27xx-bcm2708
+#-bcm27xx-bcm2709
+#-bcm27xx-bcm2710
+#-ipq40xx-generic
+#-ipq806x-generic
+#-lantiq-xrx200
+#-lantiq-xway
+#-mediatek-mt7622
+#-mpc85xx-p1010
+#-mpc85xx-p1020
+#-mvebu-cortexa9
+#-ramips-mt76x8
+#-ramips-mt7620
+#-ramips-mt7621
+#-rockchip-armv8
+#-sunxi-cortexa7
+#-x86-generic
+#-x86-geode
+#-x86-legacy
+#-x86-64"
 
 
 git clone --branch v2021.1.1 https://github.com/freifunk-gluon/gluon.git
