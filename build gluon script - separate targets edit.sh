@@ -6,19 +6,22 @@
 
 BROKENS="1"
 
-# for gluon v2021.1.1
+# for gluon v2021.1.2
 TARGETS="ar71xx-generic
-ar71xx-tiny
+ar71xx-mikrotik
 ar71xx-nand
+ar71xx-tiny
 ath79-generic
 brcm2708-bcm2708
 brcm2708-bcm2709
+brcm2708-bcm2710
 ipq40xx-generic
 ipq806x-generic
 lantiq-xrx200
 lantiq-xway
 mpc85xx-generic
 mpc85xx-p1020
+mvebu-cortexa9
 ramips-mt7620
 ramips-mt7621
 ramips-mt76x8
