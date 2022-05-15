@@ -54,7 +54,7 @@ x86-64"
 #-x86-64"
 
 
-git clone --branch v2021.1.1 https://github.com/freifunk-gluon/gluon.git
+git clone --branch v2021.1.2 https://github.com/freifunk-gluon/gluon.git
 cd gluon
 git clone https://gitlab.com/FreifunkChemnitz/site-ffc.git site
 make update
